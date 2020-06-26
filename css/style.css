@@ -1,0 +1,388 @@
+/* resetting web page */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+h1, h2 {
+    font-weight: 400;
+}
+img {
+    width: 100%;
+}
+p {
+    margin: 10px 0;
+}
+
+
+
+
+/* Utility classes */
+
+.primary-text {
+    color: darkgreen;
+}
+
+.secondary-text {
+    color: navy;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.btn-color {
+    background-color: limegreen;
+    border: 1px solid #fff;
+}
+.btn-primary {
+    background-color: navy;
+    
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-crimson {
+    background-color: crimson;
+    border: 1px solid #fff;
+}
+
+
+
+/* Navigation  */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+}
+
+
+.navbar a {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+     border-bottom: 1px solid darkgreen;
+}
+
+.navbar ul {
+    display: flex;
+    font-size: 1.3rem;
+}
+
+.navbar .logo {
+    font-weight: 500;
+}
+
+/* Header */
+.hero {
+    background: url('../assets/blog/showcase.jpg');
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.hero .content h1 {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0,0, 0.6)
+}
+.hero * {
+    z-index: 10;
+}
+
+/* section-1 */
+
+#section-1 {
+    background: #fff;
+    margin: 0 70px;
+    height: 25vh;
+    margin: 40px 20px 20px 20px;
+}
+
+#section-1 .container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: 20vh;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.container h2 {
+    color: #333;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.container p {
+    font-size:1.2rem;
+    font-weight: 300
+}
+.container .icons{
+    padding: 30px;
+    color: #fff;
+    background-color:darkgreen;
+    border-radius: 50%;
+    
+}
+/* section-2 */
+
+#section-2 {
+   
+    height: 60vh;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#section-2 .wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60vh;
+    background-color: limegreen;
+    
+    
+}
+#section-2 .wrapper img {
+    width: 100%;
+    height: 100%;
+}
+#section-2 .text-wrapper {
+   align-self: center;
+   padding: 0 20px;
+   color: #fff;
+   
+}
+#section-2 .text-wrapper h5 {
+    font-size:3rem;
+    font-weight: 300;
+}
+
+/* Section-3 */
+#section-3 {
+    width: 100%;
+    background-color: #fff;
+    font-weight: 600;
+    color: #333;
+    height: 100vh;
+}
+#section-3 .head-div {
+    width: 700px;
+    height: 25vh;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align:center;
+    
+}
+#section-3 .head-div h3 {
+    font-size: 2.2rem;
+}
+#section-3 .head-div p {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#section-3 .section-wrapper {
+    width: 99%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:10px;
+}
+
+/* Add some styling to 2rd section */
+
+#section-2 .primary-background {
+   background-color: crimson;
+   
+}
+
+/* section-4 */
+#section-4 {
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+    font-size:1.2rem;
+}
+#section-4 .section-4-header {
+    width: 700px;
+    height: 25vh;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align:center;
+}
+#section-4 .section-4-header h3 {
+    font-size: 2.2rem;
+}
+#section-4 .section-4-header p {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+#section-4 .section-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+    text-align: center;
+}
+#section-4 .section-container img{ 
+    border-radius: 50%;
+}
+/* section-5 */
+#section-5 {
+    background-color:#fff;
+    width: 100%;
+    height: 60vh;
+    font-size: 1.2rem;
+    margin-top: 70px;
+}
+
+#section-5 .input-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+#section-5 .input-wrapper .contact-input {
+    align-self: center;
+    text-align: center;
+
+}
+#section-5 .input-wrapper .contact-input input {
+    width: 90%;
+    height: 40px;
+    margin: 10px 0;
+    font-size:1.2rem;
+}
+#section-5 .input-wrapper .contact-input input:hover {
+    border: 2px solid crimson;
+} 
+/* footer */
+
+#footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #333;
+    color: #fff;
+    margin-top: 70px;
+}
+#footer .footer-container {
+  grid-template-columns: 1fr;
+  text-align:center;
+  padding-top: 100px;
+  
+}
+
+#footer .social i {
+  background-color: #fff;
+}
+#footer .footer-container h4 {
+    margin-top:10px;
+}
+
+@media screen and (max-width: 968px) {
+    #section-1  {
+        width: 100%;
+        height: 60vh;
+    }
+   #section-1 .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+    }
+    #section-2 {
+        margin-top: 70px;
+    }
+   #section-2 .wrapper {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5vh;
+       
+    
+   }
+   #section-2 {
+     height: 100vh;
+   }
+
+     #section-2 .wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 50vh;
+        }
+        #section-3  {
+            height: 125vh;
+        }
+    #section-3 .section-wrapper{
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+        grid-gap: 0;
+    }  
+
+    #section-4 {
+        margin-top: 160px;
+    }
+
+}
